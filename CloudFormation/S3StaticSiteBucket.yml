@@ -1,0 +1,20 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: Creating S3buckets for static sites
+
+Parameters:
+  BucketName:
+    Type: String
+    Default: GitHubTest
+
+
+Resources:
+  StaticSite:
+    Type: AWS::S3::Bucket
+    Properties: 
+      BucketName: !Ref BucketName
+      PublicAccessBlockConfiguration: 
+          BlockPublicAcls: true
+          BlockPublicPolicy: true
+          IgnorePublicAcls: true
+          RestrictPublicBuckets: true
+
