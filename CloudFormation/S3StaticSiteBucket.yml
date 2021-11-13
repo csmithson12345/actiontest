@@ -18,11 +18,10 @@ Resources:
           IgnorePublicAcls: true
           RestrictPublicBuckets: true
 
-Resources:
-  StaticSite:
+  StaticSite2:
     Type: AWS::S3::Bucket
     Properties: 
-      BucketName: !Sub {BucketName}-2
+      BucketName: !Sub ${BucketName}-2
       PublicAccessBlockConfiguration: 
           BlockPublicAcls: true
           BlockPublicPolicy: true
