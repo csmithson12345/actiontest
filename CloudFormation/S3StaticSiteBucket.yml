@@ -4,7 +4,7 @@ Description: Creating S3buckets for static sites
 Parameters:
   BucketName:
     Type: String
-    Default: GitHubTest
+    Default: csmithsongithubtest
 
 
 Resources:
