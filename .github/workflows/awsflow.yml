@@ -18,7 +18,7 @@ jobs:
         uses: aws-actions/aws-cloudformation-github-deploy@v1
         with:
           name: GHStackTest
-          no-execute-changeset: "1"
-          no-fail-on-empty-changeset: "1"
+          no-execute-changeset: 1
+          no-fail-on-empty-changeset: 1
           template: CloudFormation/S3StaticSiteBucket.yml
 
